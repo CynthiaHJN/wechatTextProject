@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/find/find",
+    "pages/buyList/buyList",
+    "pages/personal/personal"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fe8543",
+    "navigationBarTitleText": "妮妮的小商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#fe8543",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "./images/home-icon-nor.png",
+      "selectedIconPath": "./images/home-icon.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "发现",
+      "iconPath": "./images/find-icon-nor.png",
+      "selectedIconPath": "./images/find-icon.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "购物车",
+      "iconPath": "./images/buy-icon-nor.png",
+      "selectedIconPath": "./images/buy-icon.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "我的",
+      "iconPath": "./images/personal-icon-nor.png",
+      "selectedIconPath": "./images/personal-icon.png"
+    }]
+  }
+}

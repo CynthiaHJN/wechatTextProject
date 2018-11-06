@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="absoluteBg"></view>
+  <view class="typeList">
+    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+      <view class="typeNavigate">
+        <text class="typeName">节令时蔬</text>
+        <button class="typeButton">查看详情</button>
+      </view>
+    </view>
+    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+      <view class="typeNavigate">
+        <text class="typeName">五谷杂粮</text>
+        <button class="typeButton">查看详情</button>
+      </view>
+    </view>
+    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+      <view class="typeNavigate">
+        <text class="typeName">养身之道</text>
+        <button class="typeButton">查看详情</button>
+      </view>
+    </view>
+    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+      <view class="typeNavigate">
+        <text class="typeName">中药膏方</text>
+        <button class="typeButton">查看详情</button>
+      </view>
+    </view>
+  </view>
+</view>
