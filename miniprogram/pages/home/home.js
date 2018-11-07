@@ -4,7 +4,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    avatarUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/typeImage/type-image-1.png?sign=8d9880acb4e221bee4e731fcad31179d&t=1541498461'
+    avatarUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/typeImage/type-image-1.png?sign=8d9880acb4e221bee4e731fcad31179d&t=1541498461',
+    avatarUrl2: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/typeImage/type-image-2.jpg?sign=ec9e487cc191fdc679357e7b2f7ca7f8&t=1541557649',
+    avatarUrl3: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/typeImage/type-image-3.jpg?sign=d936dccf38395248aa8e5c36aebb9e42&t=1541558066',
+    avatarUrl4: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/typeImage/type-image-4.jpg?sign=7aacb6af6c7f4033e98443cd27acb8ed&t=1541558200'
   },
 
   /**

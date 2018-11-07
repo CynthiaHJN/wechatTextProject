@@ -7,23 +7,24 @@
         <button class="typeButton">查看详情</button>
       </view>
     </view>
-    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+    <view class="typeItem fruit" style="background-image: url({{avatarUrl2}}); background-size: 100% 100%;">
       <view class="typeNavigate">
         <text class="typeName">五谷杂粮</text>
         <button class="typeButton">查看详情</button>
       </view>
     </view>
-    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+    <view class="typeItem fruit" style="background-image: url({{avatarUrl3}}); background-size: 100% 100%;">
       <view class="typeNavigate">
         <text class="typeName">养身之道</text>
         <button class="typeButton">查看详情</button>
       </view>
     </view>
-    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+    <view class="typeItem fruit" style="background-image: url({{avatarUrl4}}); background-size: 100% 100%;">
       <view class="typeNavigate">
         <text class="typeName">中药膏方</text>
         <button class="typeButton">查看详情</button>
       </view>
     </view>
+    <text class="bottomTip">敬请期待更多品类</text>
   </view>
 </view>

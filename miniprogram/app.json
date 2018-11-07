@@ -13,8 +13,10 @@
     "pages/personal/personal"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#fe8543",
     "backgroundTextStyle": "light",
+    "backgroundColorTop": "#fe8543",
+    "backgroundColorBottom": "#ffffff",
     "navigationBarBackgroundColor": "#fe8543",
     "navigationBarTitleText": "妮妮的小商城",
     "navigationBarTextStyle": "white"
@@ -28,17 +30,17 @@
       "iconPath": "./images/home-icon-nor.png",
       "selectedIconPath": "./images/home-icon.png"
     },{
-      "pagePath": "pages/home/home",
+      "pagePath": "pages/find/find",
       "text": "发现",
       "iconPath": "./images/find-icon-nor.png",
       "selectedIconPath": "./images/find-icon.png"
     },{
-      "pagePath": "pages/home/home",
+      "pagePath": "pages/buyList/buyList",
       "text": "购物车",
       "iconPath": "./images/buy-icon-nor.png",
       "selectedIconPath": "./images/buy-icon.png"
     },{
-      "pagePath": "pages/home/home",
+      "pagePath": "pages/personal/personal",
       "text": "我的",
       "iconPath": "./images/personal-icon-nor.png",
       "selectedIconPath": "./images/personal-icon.png"
