@@ -1,1 +1,18 @@
-<view class="container"></view>
+<view class="container">
+  <view class="absoluteBg"></view>
+  <view class="searchBar {{topBar==true?'topBar':''}}">
+    <icon class="searchIcon" bindtap='goToSearch' style="background-image: url('https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/search.png?sign=f96c77788f96cc8634c17f3ad5e342ea&t=1541577118');background-size:100% 100%;"></icon>
+    <input type="text" class="searchInput" confirm-type="search" placeholder="请输入搜索商品的名称" placeholder-style="color: #eee;" bindconfirm="goToSearch"></input>
+  </view>
+  <view class="findList">
+    <view class="findItem" wx:for="{{findList}}" wx:key="index">
+      <image class="picImage" src="{{item.picUrl}}"></image>
+      <text class="findTitle">{{item.title}}</text>
+      <text class="price">￥{{item.price}}</text>
+      <view class="bottom">
+        <text class='comment'>{{item.commentNum}}条评论</text>
+        <text class='goodPercent'>{{item.goodPercent}}%好评</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,94 @@
+.absoluteBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 220rpx;
+  background: linear-gradient(#fe8543, #ffe786);
+}
+.searchBar {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  margin: 10rpx auto;
+  background: rgba(255,255,255,.3);
+  height: 60rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  z-index: 4;
+}
+.topBar {
+  background: #fe8543 !important;
+}
+.searchBar .searchInput {
+  height:100%;
+  font-size:12px;
+  min-height:none;
+  width:90%;
+  float:left;
+  color: #fff;
+  padding-left: 15rpx;
+}
+.searchBar .searchIcon {
+  position: absolute;
+  right: 15rpx;
+  top: 15rpx;
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+}
+.findList {
+  z-index: 2;
+  width: 93%;
+  margin: 0 auto;
+  position: relative;
+  top: 80rpx;
+}
+.findList .findItem {
+  position: relative;
+  width: 49%;
+  display: inline-block;
+  background: #fff;
+  box-shadow: 3px 3px 8px #F2E7A4;
+  margin-bottom: 20rpx;
+  padding-bottom: 15rpx;
+}
+.findList .findItem:nth-child(odd) {
+  margin-right: 2%;
+}
+.findList .findItem .picImage {
+  width: 100%;
+  height: 300rpx;
+}
+.findList .findItem .findTitle {
+  font-size: 25rpx;
+  color: #777;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.findList .findItem .price {
+  font-size: 34rpx;
+  color: #F1932E;
+  display: block;
+  width: 100%;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.findList .findItem .bottom {
+  font-size: 20rpx;
+  color: #777;
+}
+.findList .findItem .comment {
+  float: left;
+  margin-left: 10rpx;
+}
+.findList .findItem .goodPercent {
+  float: right;
+  margin-right: 10rpx;
+}

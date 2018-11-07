@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/find/find",
     "pages/home/home",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -8,7 +9,7 @@
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    "pages/find/find",
+    
     "pages/buyList/buyList",
     "pages/personal/personal"
   ],
