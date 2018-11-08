@@ -5,7 +5,7 @@
     <input type="text" class="searchInput" confirm-type="search" placeholder="请输入搜索商品的名称" placeholder-style="color: #eee;" bindconfirm="goToSearch"></input>
   </view>
   <view class="findList">
-    <view class="findItem" wx:for="{{findList}}" wx:key="index">
+    <view class="findItem" bindtap="geToDetail" wx:for="{{findList}}" wx:key="index" data-id="{{item.id}}">
       <image class="picImage" src="{{item.picUrl}}"></image>
       <text class="findTitle">{{item.title}}</text>
       <text class="price">￥{{item.price}}</text>

@@ -1,0 +1,30 @@
+<!--pages/find/goods-detail/goods-detail.wxml-->
+<view class='container'>
+  <view class="absoluteBg"></view>
+  <view class='pageDetail'>
+    <view class='pageBox'>
+      <image class='picImage' src="{{goodItem.picUrl}}"></image>
+      <text class='title'>{{goodItem.title}}</text>
+      <text class='price'>￥{{goodItem.price}}</text>
+      <icon class="addBuyIcon"></icon>
+    </view>
+    <view class='goodsIntro'>
+      <view class="goodsLine">
+        <label class='goodsLabel'>已选</label>
+        <text class='goodsText'>盒数： 1盒</text>
+        <icon class='goodsIcon' style='background-image:url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/more.png?sign=3238953070c4a42348e040c7ed749ae8&t=1541658752);background-size: 100% 100%;'></icon>
+      </view>
+      <view class="goodsLine">
+        <label class='goodsLabel'>送至</label>
+        <text class='goodsText'>浙江省杭州市余杭区余杭塘路2813号杭州师范大学仓前校区</text>
+        <icon class='goodsIcon' style='background-image:url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/more.png?sign=3238953070c4a42348e040c7ed749ae8&t=1541658752);background-size: 100% 100%;'></icon>
+      </view>
+      <view class="goodsLine">
+        <label class='goodsLabel'>运费</label>
+        <text class='goodsText'>免运费</text>
+        <icon class='goodsIcon' style='background-image:url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/more.png?sign=3238953070c4a42348e040c7ed749ae8&t=1541658752);background-size: 100% 100%;'></icon>
+      </view>
+    </view>
+    <button class='buyNow'>购买商品</button>
+  </view>
+</view>

@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/find/find",
+    "pages/buyList/buyList",
     "pages/home/home",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -9,8 +9,8 @@
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    
-    "pages/buyList/buyList",
+    "pages/find/find",
+    "pages/find/goods-detail/goods-detail",
     "pages/personal/personal"
   ],
   "window": {

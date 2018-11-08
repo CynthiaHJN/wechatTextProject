@@ -1,5 +1,5 @@
 .absoluteBg {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -73,7 +73,8 @@
   box-sizing: border-box;
 }
 .findList .findItem .price {
-  font-size: 34rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
   color: #F1932E;
   display: block;
   width: 100%;

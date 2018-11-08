@@ -1,0 +1,108 @@
+/* pages/find/goods-detail/goods-detail.wxss */
+.absoluteBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 220rpx;
+  background: linear-gradient(#fe8543, #ffe786);
+}
+.pageDetail {
+  width: 100%;
+  z-index: 2;
+  margin-top: 10rpx;
+}
+.pageDetail .pageBox {
+  position: relative;
+  width: 93%;
+  height: 640rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-shadow: 3px 3px 8px #F2E7A4;
+  overflow: hidden;
+}
+.pageDetail .pageBox .picImage {
+  width: 100%;
+  height: 490rpx;
+}
+.pageDetail .pageBox .title{
+  font-size: 25rpx;
+  color: #777;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  margin: 20rpx 0;
+}
+.pageDetail .pageBox .price {
+  font-size: 30rpx;
+  color: #F1932E;
+  display: block;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.pageDetail .pageBox .addBuyIcon {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30rpx;
+  right: 20rpx;
+  background: linear-gradient(to right,#fe8543, #ffe786);
+}
+.pageDetail .goodsIntro  {
+  margin-top: 40rpx;
+}
+.pageDetail .goodsIntro .goodsLine {
+  width: 100%;
+  padding: 0 3.5%;
+  box-sizing: border-box;
+  height: 100rpx;
+  border-bottom: 1px solid #eee; 
+}
+.pageDetail .goodsIntro .goodsLine:last-child {
+  border-bottom: 0;
+}
+.pageDetail .goodsIntro .goodsIcon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 25rpx;
+  float: right;
+}
+.pageDetail .goodsIntro .goodsLabel, .pageDetail .goodsIntro .goodsText {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 100rpx;
+  color: #333;
+}
+.pageDetail .goodsIntro .goodsLabel {
+  width: 10%;
+}
+.pageDetail .goodsIntro .goodsText {
+  width: 70%;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.buyNow {
+  width: 80%;
+  margin: 20rpx auto;
+  border: 0;
+  background: linear-gradient(to right,#fe8543, #ffe786);
+  font-size: 14px;
+  color: #fff;
+  border-radius: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.buyNow:after{
+  border: 0;
+}
