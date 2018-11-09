@@ -1,0 +1,128 @@
+.absoluteBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 220rpx;
+  background: linear-gradient(#fe8543, #ffe786);
+}
+.buyList {
+  width: 100%;
+  position: relative;
+  margin-top: 10rpx;
+  z-index: 2;
+  margin-bottom: 80rpx;
+}
+.buyList .buyItem {
+  width: 93%;
+  margin: 0 auto 20rpx;
+  height: 300rpx;
+  font-size: 14px;
+  background: linear-gradient(#eee, 15%, #ffffff, 70%, #eee);
+  border-radius: 10rpx;
+}
+.buyItem .buyCheckBox {
+  float: left;
+  width: 70rpx;
+  text-align: center;
+}
+.buyItem .buyCheckBox .checkbox {
+  margin-top: 120rpx;
+  /* width: 30rpx; */
+  /* height: 30rpx; */
+}
+.buyList .buyItem .buyGoodsImage {
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+  margin-top: 50rpx;
+}
+.buyList .buyItem .buyGoodsImage .image {
+  width: 100%;
+  height: 100%;
+}
+.buyGoodsIntro {
+  float: left;
+  width: calc(100% - 280rpx);
+  padding-left: 15rpx;
+  box-sizing: border-box;
+  margin-top: 80rpx;
+}
+.buyGoodsIntro .name{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #333;
+  display: block;
+  margin-bottom: 20rpx;
+}
+.buyGoodsIntro .price {
+  display: block;
+  font-size: 13px;
+  color: #fe8543;
+  margin-bottom: 20rpx;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  border: 1px solid #d2d2d2;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #fe8543;
+  border: 1px solid #fe8543;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+.fixedPayLine {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80rpx;
+  z-index: 4;
+  background: #ffffff;
+  border-top: #eee 1px solid;
+  box-sizing: border-box;
+  padding: 0 5%;
+  font-size: 12px;
+  color: #888;
+  line-height: 75rpx;
+}
+.payBtn {
+  float: right;
+  width: 150rpx;
+  height: 60rpx;
+  padding: 0;
+  min-height: 0;
+  font-size: 12px;
+  background: #fe8543;
+  color: #ffffff;
+  margin-top: 10rpx;
+}
+.payBtn::after{
+  border: 0;
+  padding: 0;
+}
+.totalAmount {
+  float: right;
+  margin-top: 2.5rpx;
+  margin-right: 15rpx;
+  color: #fe8543;
+}
+.radio-all-group {
+  display: inline-block;
+}

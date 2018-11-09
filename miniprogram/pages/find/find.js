@@ -63,8 +63,6 @@ Page({
   },
 
   geToDetail: function(e) {
-    // let _this = this;
-    // console.log();
     wx.navigateTo({
       url: './goods-detail/goods-detail?id=' + e.currentTarget.dataset.id,
     })
