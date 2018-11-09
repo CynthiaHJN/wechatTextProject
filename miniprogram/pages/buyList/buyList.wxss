@@ -19,7 +19,9 @@
   margin: 0 auto 20rpx;
   height: 300rpx;
   font-size: 14px;
-  background: linear-gradient(#eee, 15%, #ffffff, 70%, #eee);
+  background: #ffffff;
+  /* background: linear-gradient(#eee, 15%, #ffffff, 70%, #eee); */
+  box-shadow: 1px 1px 6px #ffe786;
   border-radius: 10rpx;
 }
 .buyItem .buyCheckBox {
@@ -29,8 +31,6 @@
 }
 .buyItem .buyCheckBox .checkbox {
   margin-top: 120rpx;
-  /* width: 30rpx; */
-  /* height: 30rpx; */
 }
 .buyList .buyItem .buyGoodsImage {
   width: 200rpx;

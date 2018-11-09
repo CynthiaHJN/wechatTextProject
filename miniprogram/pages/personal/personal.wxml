@@ -1,1 +1,51 @@
-<view class="container"></view>
+<view class="container">
+  <view class='absoluteBg'></view>
+  <view class='personalCnt'>
+    <view class='topCon'>
+      <view class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></view>
+      <view class='name'>Cheng Heng</view>
+      <view class='score'>我的积分： <label>1000</label></view>
+      <view class='line'><text class='link'>账户管理＞</text></view>
+    </view>
+    <view class='middleCon'>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>待付款</text>
+      </view>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>待接单</text>
+      </view>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>待发货</text>
+      </view>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>运输中</text>
+      </view>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>已签收</text>
+      </view>
+    </view>
+    <view class='bottomCon'>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>充值</text>
+      </view>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>账单</text>
+      </view>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>收藏</text>
+      </view>
+      <view class='funcItem'>
+        <icon class='funcItemIcon'></icon>
+        <text class='funcItemName'>服务</text>
+      </view>
+    </view>
+  </view>
+</view>

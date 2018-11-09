@@ -1,0 +1,131 @@
+.absoluteBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 220rpx;
+  background: linear-gradient(#fe8543, #ffe786);
+}
+.personalCnt {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.personalCnt .topCon {
+  width: 80%;
+  height: 340rpx;
+  margin: 10rpx auto;
+  border-radius: 10rpx;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #ffe786;
+  box-sizing: border-box;
+  padding-top: 50rpx;
+}
+.personalCnt  .userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.personalCnt .name, .personalCnt .score, .personalCnt .line {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+.personalCnt .name {
+  font-size: 15px;
+  line-height: 50rpx;
+}
+.personalCnt .score label{
+  color: #fe8543;
+  font-weight: bold;
+  line-height: 40rpx;
+  font-size: 10px;
+}
+.personalCnt .line .link {
+  float: right;
+  margin-right: 20rpx;
+  color: #fe8543;
+}
+.middleCon {
+  display: flex;
+  font-size: 12px;
+  color: #777;
+  margin-top: 40rpx;
+}
+.middleCon .funcItem {
+  flex: 1;
+  text-align: center;
+}
+.middleCon .funcItemIcon {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  /* background: #ddd; */
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.middleCon .funcItem:nth-child(1) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/qianbao_1.png?sign=74eb8fe038b340c7fa6d49407ac85351&t=1541754197);
+}
+.middleCon .funcItem:nth-child(2) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/icon--copy.png?sign=5e351a9436f17e0a0e3f26c8c9ab3b56&t=1541754265);
+  background-size: 92% 92%;
+}
+.middleCon .funcItem:nth-child(3) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/fahuo_1.png?sign=604574836f835265ed0e256338fe7b12&t=1541754297);
+  background-size: 86% 86%;
+}
+.middleCon .funcItem:nth-child(4) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/fahuo.png?sign=94bfdacc8aa37a4bc23606c5b35efb3b&t=1541754283);
+  background-size: 92% 92%;
+}
+.middleCon .funcItem:nth-child(5) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/wancheng.png?sign=22f24edb98199d3065601c95cc709a89&t=1541754311);
+  background-size: 86% 86%;
+}
+.bottomCon {
+  width: 100%;
+  margin-top: 50rpx;
+  padding: 0 8%;
+  box-sizing: border-box;
+}
+.bottomCon .funcItem {
+  float: right;
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 2px 2px 8px #f7efb0;
+  padding: 30rpx 0;
+} 
+.bottomCon .funcItem:nth-child(odd) {
+  float: left;
+}
+.bottomCon .funcItem .funcItemIcon {
+  display: block;
+  width: 130rpx;
+  height: 130rpx;
+  margin: 0 auto;
+  /* background: #ffe786; */
+  background-size: cover;
+}
+.bottomCon .funcItem:nth-child(1) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/t2_1.png?sign=a3fa6fc30ffd309761f6c472fc9c8028&t=1541757337);
+}
+.bottomCon .funcItem:nth-child(2) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/t2_2.png?sign=a50fef194ce76dc2c2ed8863401b6198&t=1541757358);
+}
+.bottomCon .funcItem:nth-child(3) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/t2_3.png?sign=c1b5ecd51c1747bca76aa3594cd37980&t=1541757371);
+}
+.bottomCon .funcItem:nth-child(4) .funcItemIcon {
+  background-image: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/personal-image/t2_4.png?sign=1c7f4e8c3519da17b0fedeb8d92c07ef&t=1541757382);
+}
