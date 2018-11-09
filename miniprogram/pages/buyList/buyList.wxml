@@ -2,14 +2,14 @@
   <view class="absoluteBg"></view>
   <view class='buyList'>
     <checkbox-group class="radio-group" bindchange="radioChange">
-      <view class='buyItem' wx:for="{{buyList}}" wx:key="index" data-id='{{item.id}}' bindtap='goToDetail'>
+      <view class='buyItem' wx:for="{{buyList}}" wx:key="index">
         <view class='buyCheckBox'>
           <checkbox class='checkbox' value='{{index}}' checked='{{item.checked}}'></checkbox>
         </view>
-        <view class='buyGoodsImage'>
+        <view class='buyGoodsImage' data-id='{{item.id}}' bindtap='goToDetail'>
           <image class='image' src='{{item.picUrl}}'></image>
         </view>
-        <view class='buyGoodsIntro'>
+        <view class='buyGoodsIntro' data-id='{{item.id}}' bindtap='goToDetail'>
           <text class='name'>{{item.title}}</text>
           <text class='price'>￥{{item.price}}</text>
           <text class='name'>购买数量：{{item.buyNum}}件</text>
