@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "妮妮的小商城"
+  "navigationBarTitleText": "妮妮的小商城",
+  "usingComponents": {
+    "dialog": "../../components/dialog/dialog"
+  }
 }

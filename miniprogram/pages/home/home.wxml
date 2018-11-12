@@ -1,7 +1,7 @@
 <view class="container">
   <view class="absoluteBg"></view>
   <view class="typeList">
-    <view class="typeItem fruit" style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
+    <view class="typeItem fruit" bindtap='showDialog' style="background-image: url({{avatarUrl}}); background-size: 100% 100%;">
       <view class="typeNavigate">
         <text class="typeName">节令时蔬</text>
         <button class="typeButton">查看详情</button>
@@ -27,4 +27,5 @@
     </view>
     <text class="bottomTip">敬请期待更多品类</text>
   </view>
+  <dialog id="dialog" title="我是标题" content="小程序组件" bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent"></dialog>
 </view>

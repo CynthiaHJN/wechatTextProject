@@ -12,7 +12,9 @@ Page({
       commentNum: '100',
       goodPercent: '96',
       id: 1
-    }
+    },
+    isLove: false,
+    loveSrc: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/love.png?sign=9fb615f623295539f3f15b62f7abe181&t=1542008608'
   },
 
   /**
@@ -28,9 +30,26 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    this.myGoodsNumber = this.selectComponent("#myGoodsNumber");
   },
 
+  showGoodsNumber: function () {
+    this.myGoodsNumber.showDialog();
+  },
+
+  changeLove: function () {
+    if (this.data.isLove) {
+      this.setData({
+        isLove: !this.data.isLove,
+        loveSrc: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/love-full.png?sign=f999edc939b8179e947ad29ab816539a&t=1542008872'
+      })
+    } else {
+      this.setData({
+        isLove: !this.data.isLove,
+        loveSrc: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/love.png?sign=9fb615f623295539f3f15b62f7abe181&t=1542008608'
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面显示
    */

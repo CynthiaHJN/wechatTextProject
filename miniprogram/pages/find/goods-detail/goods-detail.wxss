@@ -106,3 +106,14 @@
 .buyNow:after{
   border: 0;
 }
+
+#myGoodsNumber {
+  width: 100%;
+}
+.addBuyIcon image {
+  width:60%;
+  height:60%;
+  text-align:center;
+  margin-left:20%;
+  margin-top:23%;
+}

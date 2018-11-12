@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "goods-number": "../../../components/goods-number-model/goods-number-model"
+  }
+}

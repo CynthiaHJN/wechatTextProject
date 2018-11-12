@@ -1,0 +1,26 @@
+<!--components/goods-number-model/goods-number-model.wxml-->
+<view class='goods-number-model' hidden='{{!isShow}}'>
+  <view class='mask' bindtap='hideDialog'></view>
+  <view class='content' animation="{{animation}}">
+    <!-- <view class='topline'>
+      <icon class='close-icon' bindtap='hideDialog'></icon>
+    </view> -->
+    <view class='buy-number'>
+      <label class='name'>购买数量</label>
+      <view class='number-controller'>
+        <button class='btn decrease {{buyNumber<=1?"disable-class":""}}' bindtap='decrease' disabled='{{buyNumber<=1}}'>-</button>
+        <input class='buy-input' type='number' value='{{buyNumber}}' bindinput='inputNumber'></input>
+        <button class='btn addtion' bindtap='addtion'>+</button>
+      </view>
+    </view>
+    <view class='location'>
+      <label class='name'>配送区域<em>(配送地可能会影响库存，请正确选择)</em></label>
+      <view class='location-content'>
+        <icon class='location-icon'></icon>
+        <text>杭州市余杭区仓前街道</text>
+        <icon class='next-icon'></icon>
+      </view>
+    </view>
+    <button class='confirmBtn'>确定</button>
+  </view>
+</view>

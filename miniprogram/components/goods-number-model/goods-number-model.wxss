@@ -1,0 +1,127 @@
+/* components/goods-number-model/goods-number-model.wxss */
+.goods-number-model .mask {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.goods-number-model .content{
+  position: fixed;
+  bottom: -400rpx;
+  width: 100%;
+  height: 400rpx;
+  background-color: #fff;
+  z-index: 10;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.buy-number {
+  padding: 0 5%;
+  font-size: 12px;
+  height: 50rpx;
+  margin-bottom: 30rpx;
+}
+.goods-number-model .content .buy-number .btn {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  padding: 0;
+  line-height: 48rpx;
+  background: #dedede;
+  color: #777;
+  font-weight: bold;
+  border-radius: 0
+}
+.goods-number-model .content .buy-number .btn::after{
+  border: 0;
+}
+.goods-number-model .content .buy-number .buy-input {
+  display: inline-block;
+  width: 100rpx;
+  height: 50rpx;
+  padding: 0;
+  background: #dedede;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  min-height: 0;
+  margin: 0 5rpx;
+}
+.number-controller {
+  float: right;
+}
+.goods-number-model .content .buy-number .name {
+  float: left;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.confirmBtn {
+  position: absolute;
+  bottom: 40rpx;
+  left: 5%;
+  width: 90%;
+  height: 60rpx;
+  font-size: 14px;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  background: linear-gradient(to right,#fe8543, #ffe786);
+  color: #fff;
+}
+.confirmBtn::after{
+  border: 0;
+}
+.location {
+  padding: 0 5%;
+  font-size: 12px;
+}
+.location .name em {
+  color:#999;
+  font-size:11px;
+}
+.location-icon {
+  width: 35rpx;
+  height: 35rpx;
+  background: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/dizhi.png?sign=163654b3b99cecf6c5a91f415c503b28&t=1542006913);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.location .location-content {
+  height: 60rpx;
+  line-height: 60rpx;
+  color:#777;
+}
+.location .location-content text {
+  display: inline-block;
+  height: 100%;
+  line-height: 40rpx;
+}
+.next-icon {
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+  background: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/xiayibu.png?sign=4c4b81dc5fc6c7606e047e4fb5814ada&t=1542007132);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+.topline {
+  height: 50rpx;
+}
+.close-icon {
+  float: right;
+  margin-right: 5%;
+  width: 40rpx;
+  height: 40rpx;
+  background: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/round_close.png?sign=aa63d732600094d02b24083658404af1&t=1542007579);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.disable-class {
+  background: #eee !important;
+}

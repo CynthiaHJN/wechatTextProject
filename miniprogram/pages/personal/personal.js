@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    avatarUrl: '../index/user-unlogin.png',
+    avatarUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/user-unlogin.png?sign=9667cd47a135fcdc177298e8ed71fabc&t=1541757875',
   },
 
   /**
