@@ -1,6 +1,6 @@
 {
   "pages": [
-  
+    "pages/personal/personal",
     "pages/home/home",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -12,13 +12,14 @@
     "pages/find/find",
     "pages/find/goods-detail/goods-detail",
     "pages/buyList/buyList",
-    "pages/personal/personal"
+    
+    "pages/address/address"
   ],
   "window": {
     "backgroundColor": "#fe8543",
     "backgroundTextStyle": "light",
     "backgroundColorTop": "#fe8543",
-    "backgroundColorBottom": "#ffffff",
+    "backgroundColorBottom": "#f2f2f2",
     "navigationBarBackgroundColor": "#fe8543",
     "navigationBarTitleText": "妮妮的小商城",
     "navigationBarTextStyle": "white"
@@ -26,6 +27,7 @@
   "tabBar": {
     "color": "#888888",
     "selectedColor": "#fe8543",
+    "backgroundColor": "#f2f2f2",
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",

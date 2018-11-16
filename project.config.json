@@ -10,7 +10,7 @@
 	},
 	"appid": "wxba95996bff6219fe",
 	"projectname": "niniStore",
-	"libVersion": "2.2.5",
+	"libVersion": "2.4.0",
 	"condition": {
 		"search": {
 			"current": -1,

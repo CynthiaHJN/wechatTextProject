@@ -21,6 +21,7 @@
   border-radius: 10rpx;
   box-shadow: 3px 3px 8px #F2E7A4;
   overflow: hidden;
+  background-color: #fff;
 }
 .pageDetail .pageBox .picImage {
   width: 100%;
@@ -64,7 +65,7 @@
   padding: 0 3.5%;
   box-sizing: border-box;
   height: 100rpx;
-  border-bottom: 1px solid #eee; 
+  border-bottom: 1px solid #e9e9e9; 
 }
 .pageDetail .goodsIntro .goodsLine:last-child {
   border-bottom: 0;

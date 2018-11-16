@@ -21,7 +21,7 @@
   font-size: 14px;
   background: #ffffff;
   /* background: linear-gradient(#eee, 15%, #ffffff, 70%, #eee); */
-  box-shadow: 1px 1px 6px #ffe786;
+  /* box-shadow: 1px 1px 6px #ffe786; */
   border-radius: 10rpx;
 }
 .buyItem .buyCheckBox {
@@ -97,21 +97,22 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   background: #ffffff;
   border-top: #eee 1px solid;
   box-sizing: border-box;
-  padding: 0 5%;
+  padding: 0 0 0 5%;
   font-size: 12px;
   color: #888;
   line-height: 75rpx;
 }
 .payBtn {
   float: right;
-  width: 150rpx;
-  height: 60rpx;
+  width: 170rpx;
+  height: 100%;
   padding: 0;
   min-height: 0;
   font-size: 12px;
   background: #fe8543;
   color: #ffffff;
-  margin-top: 10rpx;
+  border-radius: 0;
+  line-height: 80rpx;
 }
 .payBtn::after{
   border: 0;
