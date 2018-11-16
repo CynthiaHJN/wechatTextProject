@@ -10,7 +10,7 @@
 .buyList {
   width: 100%;
   position: relative;
-  margin-top: 10rpx;
+  padding-top: 30rpx;
   z-index: 2;
   margin-bottom: 80rpx;
 }

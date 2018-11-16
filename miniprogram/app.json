@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/personal/personal",
+    
     "pages/home/home",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -12,8 +12,8 @@
     "pages/find/find",
     "pages/find/goods-detail/goods-detail",
     "pages/buyList/buyList",
-    
-    "pages/address/address"
+    "pages/address/address",
+    "pages/personal/personal"
   ],
   "window": {
     "backgroundColor": "#fe8543",

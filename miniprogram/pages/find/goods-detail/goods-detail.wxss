@@ -97,7 +97,7 @@
   width: 80%;
   margin: 20rpx auto;
   border: 0;
-  background: linear-gradient(to right,#fe8543, #ffe786);
+  background: linear-gradient(to right,#fe8543 60%, #ffe786);
   font-size: 14px;
   color: #fff;
   border-radius: 80rpx;

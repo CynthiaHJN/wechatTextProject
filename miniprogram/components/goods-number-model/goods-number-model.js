@@ -64,6 +64,11 @@ Component({
       this.setData({
         buyNumber: parseInt(value)
       });
+    },
+    gotoAddress() {
+      wx.navigateTo({
+        url: '/pages/address/address',
+      })
     }
   }
 })

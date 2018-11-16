@@ -69,7 +69,7 @@
   font-size: 14px;
   line-height: 60rpx;
   border-radius: 30rpx;
-  background: linear-gradient(to right,#fe8543, #ffe786);
+  background: linear-gradient(to right,#fe8543 60%, #ffe786);
   color: #fff;
 }
 .confirmBtn::after{

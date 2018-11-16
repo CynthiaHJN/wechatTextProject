@@ -1,5 +1,84 @@
 <view class="container">
-  <view class=''>
-
+  <view class='top'>
+    <view class='addressView'>
+      <text class='labelName'>当前配送至</text>
+      <view class='addressList'>
+        <view class='addressItem now'>
+          <icon class='location-icon'></icon>
+          <text>杭州市 余杭区 仓前街道</text>
+        </view>
+      </view>
+    </view>
+    <view class='addressView'>
+      <text class='labelName'>从我的收货地址选择</text>
+      <view class='addressList'>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+        <view class='addressItem'>
+          <view class='name'>
+            <text>何佳妮</text>
+            <text>17816869761</text>
+          </view>
+          <text class='address'>浙江省 杭州市 拱墅区 祥符街道雍容华庭 2幢1803</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <button open-type='chooseOtherLocation' bindtap='chooseOtherLocation'>选择其他地区</button>
   </view>
 </view>

@@ -1,0 +1,76 @@
+.top{
+  width: 100%;
+  margin-bottom: 120rpx;
+}
+.addressView {
+  width: 100%;
+}
+.addressView .labelName {
+  display: block;
+  font-size: 12px;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  color: #999;
+}
+.addressView .addressList {
+  background: #ffffff;
+}
+.addressView .addressList .addressItem {
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  padding: 0 20rpx;
+}
+.addressView .addressList .addressItem.now {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.addressView .addressList .addressItem:last-child {
+  border-bottom: 0;
+}
+.location-icon {
+  width: 45rpx;
+  height: 45rpx;
+  background: url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/dizhi.png?sign=163654b3b99cecf6c5a91f415c503b28&t=1542006913);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.addressView .addressList .addressItem .name {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.addressView .addressList .addressItem .name text:nth-child(odd){
+  float: left;
+}
+.addressView .addressList .addressItem .name text:nth-child(even){
+  float: right;
+}
+.addressView .addressList .addressItem .address {
+  display: block;
+  font-size: 13px;
+  padding-bottom: 20rpx;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+.bottom button {
+  width: 86%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0;
+  border-radius: 40rpx;
+  font-size: 15px;
+  color: #ffffff;
+  background: linear-gradient(to right,#fe8543 60%, #ffe786);
+}
+.bottom button:after {
+  border: 0;
+}
