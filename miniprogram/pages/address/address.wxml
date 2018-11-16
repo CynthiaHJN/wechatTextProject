@@ -79,6 +79,6 @@
     </view>
   </view>
   <view class='bottom'>
-    <button open-type='chooseOtherLocation' bindtap='chooseOtherLocation'>选择其他地区</button>
+    <button bindtap='chooseOtherLocation'>选择其他地区</button>
   </view>
 </view>

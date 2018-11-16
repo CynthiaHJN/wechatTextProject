@@ -30,6 +30,9 @@
   background-size: cover;
   background-color: white;
 }
+.personalCnt  .userinfo-avatar::after{
+  border: 0;
+}
 
 .personalCnt .name, .personalCnt .score, .personalCnt .line {
   width: 100%;

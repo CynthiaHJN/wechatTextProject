@@ -2,8 +2,8 @@
   <view class='absoluteBg'></view>
   <view class='personalCnt'>
     <view class='topCon'>
-      <view class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></view>
-      <view class='name'>Cheng Heng</view>
+      <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></button>
+      <view class='name'>{{userInfo.nickName}}</view>
       <view class='score'>我的积分： <label>1000</label></view>
       <view class='line'><text class='link'>账户管理＞</text></view>
     </view>
