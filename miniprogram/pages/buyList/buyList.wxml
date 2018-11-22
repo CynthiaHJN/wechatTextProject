@@ -6,12 +6,12 @@
         <view class='buyCheckBox'>
           <checkbox class='checkbox' value='{{index}}' checked='{{item.checked}}'></checkbox>
         </view>
-        <view class='buyGoodsImage' data-id='{{item.id}}' bindtap='goToDetail'>
+        <view class='buyGoodsImage' data-id='{{item.goodId}}' bindtap='goToDetail'>
           <image class='image' src='{{item.picUrl}}'></image>
         </view>
-        <view class='buyGoodsIntro' data-id='{{item.id}}' bindtap='goToDetail'>
-          <text class='name'>{{item.title}}</text>
-          <text class='price'>￥{{item.price}}</text>
+        <view class='buyGoodsIntro' data-id='{{item.goodId}}' bindtap='goToDetail'>
+          <text class='name'>{{item.name}}</text>
+          <text class='price'>￥{{item.price*item.buyNum}}</text>
           <text class='name'>购买数量：{{item.buyNum}}件</text>
         </view>
       </view>

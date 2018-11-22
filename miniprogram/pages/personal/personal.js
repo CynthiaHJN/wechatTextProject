@@ -1,3 +1,5 @@
+const app = getApp()
+
 Page({
 
   /**
@@ -23,6 +25,8 @@ Page({
                 avatarUrl: res.userInfo.avatarUrl,
                 userInfo: res.userInfo
               })
+              app.globalData.userInfo = res.userInfo;
+              // app.globalData.openid = res.result.openid
             }
           })
         }
@@ -80,13 +84,13 @@ Page({
   },
 
   onGetUserInfo: function (e) {
-    console.log(e);
     if (!this.data.logged && e.detail.userInfo) {
       this.setData({
         logged: true,
         avatarUrl: e.detail.userInfo.avatarUrl,
         userInfo: e.detail.userInfo
       })
+      app.globalData.userInfo = e.detail.userInfo;
     }
   }
 })

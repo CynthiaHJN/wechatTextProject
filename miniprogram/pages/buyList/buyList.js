@@ -1,3 +1,5 @@
+wx.cloud.init();
+const db = wx.cloud.database();
 Page({
 
   /**
@@ -19,6 +21,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getBuyList();
   },
 
   /**
@@ -28,25 +31,8 @@ Page({
     
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
+    this.getBuyList();
   },
 
   /**
@@ -60,13 +46,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
     
   },
 
@@ -124,6 +103,23 @@ Page({
   goToDetail: function (e) {
     wx.navigateTo({
       url: '../find/goods-detail/goods-detail?id=' + e.currentTarget.dataset.id,
+    })
+  },
+
+  getBuyList: function () {
+    let _this = this;
+    db.collection('buyList').where({}).get({
+      success: function(res) {
+        for(let i=0; i<res.data.length; i++) {
+          res.data[i].checked = false;
+        }
+        _this.setData({
+          buyList: res.data
+        })
+      },
+      fail: function(err) {
+        console.log(err);
+      }
     })
   }
 })

@@ -4,14 +4,14 @@
   <view class='pageDetail'>
     <view class='pageBox'>
       <image class='picImage' src="{{goodItem.picUrl}}"></image>
-      <text class='title'>{{goodItem.title}}</text>
+      <text class='title'>{{goodItem.name}}</text>
       <text class='price'>￥{{goodItem.price}}</text>
       <icon class="addBuyIcon" bindtap='changeLove'><image src='{{loveSrc}}'></image></icon>
     </view>
     <view class='goodsIntro'>
       <view class="goodsLine">
         <label class='goodsLabel'>已选</label>
-        <text class='goodsText'>盒数： 1盒</text>
+        <text class='goodsText'>单位: {{goodItem.unit}} 数量: {{buyNum}}</text>
         <icon class='goodsIcon' bindtap='showGoodsNumber' style='background-image:url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/more.png?sign=3238953070c4a42348e040c7ed749ae8&t=1541658752);background-size: 100% 100%;'></icon>
       </view>
       <view class="goodsLine">
@@ -25,7 +25,8 @@
         <icon class='goodsIcon' style='background-image:url(https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/more.png?sign=3238953070c4a42348e040c7ed749ae8&t=1541658752);background-size: 100% 100%;'></icon>
       </view>
     </view>
-    <button class='buyNow'>购买商品</button>
+    <button bindtap='buyGoods' class='buyNow'>购买商品</button>
   </view>
-  <goods-number id="myGoodsNumber"></goods-number>
+  <goods-number id="myGoodsNumber" buyNumber="{{buyNum}}"></goods-number>
+  <dialog id="dialog" title="{{msg.title}}" content="{{msg.content}}" bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent"></dialog>
 </view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "goods-number": "../../../components/goods-number-model/goods-number-model"
+    "goods-number": "../../../components/goods-number-model/goods-number-model",
+    "dialog": "../../../components/dialog/dialog"
   }
 }

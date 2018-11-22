@@ -20,13 +20,12 @@
   height: 300rpx;
   font-size: 14px;
   background: #ffffff;
-  /* background: linear-gradient(#eee, 15%, #ffffff, 70%, #eee); */
-  /* box-shadow: 1px 1px 6px #ffe786; */
   border-radius: 10rpx;
 }
 .buyItem .buyCheckBox {
   float: left;
   width: 70rpx;
+  height: 100%;
   text-align: center;
 }
 .buyItem .buyCheckBox .checkbox {
@@ -34,20 +33,22 @@
 }
 .buyList .buyItem .buyGoodsImage {
   width: 200rpx;
-  height: 200rpx;
+  height: 100%;
   float: left;
-  margin-top: 50rpx;
+  padding-top: 50rpx;
+  box-sizing: border-box;
 }
 .buyList .buyItem .buyGoodsImage .image {
   width: 100%;
-  height: 100%;
+  height: 200rpx;
 }
 .buyGoodsIntro {
   float: left;
   width: calc(100% - 280rpx);
   padding-left: 15rpx;
+  padding-top: 80rpx;
+  height: 100%;
   box-sizing: border-box;
-  margin-top: 80rpx;
 }
 .buyGoodsIntro .name{
   overflow: hidden;

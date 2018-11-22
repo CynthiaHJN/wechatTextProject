@@ -1,3 +1,5 @@
+const app = getApp()
+
 Page({
 
   /**
@@ -5,16 +7,14 @@ Page({
    */
   data: {
     id: null,
-    goodItem: {
-      picUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/goods-image/goods-image-1.jpg?sign=e3f8790be8d9a8a557767bd1dec06a7c&t=1541578473',
-      title: '时令新鲜水果脐时令新鲜水果脐橙5斤 超甜',
-      price: '45.00',
-      commentNum: '100',
-      goodPercent: '96',
-      id: 1
-    },
+    goodItem: {},
     isLove: false,
-    loveSrc: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/love.png?sign=9fb615f623295539f3f15b62f7abe181&t=1542008608'
+    loveSrc: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/love.png?sign=9fb615f623295539f3f15b62f7abe181&t=1542008608',
+    buyNum: 1,
+    msg: {
+      title: '提醒',
+      content: ''
+    }
   },
 
   /**
@@ -24,6 +24,7 @@ Page({
     this.setData({
       id: options.id
     });
+    this.getGoodDetail(options.id);
   },
 
   /**
@@ -31,6 +32,7 @@ Page({
    */
   onReady: function () {
     this.myGoodsNumber = this.selectComponent("#myGoodsNumber");
+    this.dialog = this.selectComponent("#dialog");
   },
 
   showGoodsNumber: function () {
@@ -90,5 +92,77 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+
+  getGoodDetail: function (id) {
+    wx.cloud.callFunction({
+      name: 'goodsList',
+      data: {
+        _id: parseInt(id)
+      },
+      success: res => {
+        this.setData({
+          goodItem: res.result.data[0],
+          buyNum: 1
+        });
+      },
+      fail: err => {
+        console.log(err);
+      }
+    })
+  },
+
+  buyGoods: function () {
+    if (app.globalData.userInfo) {
+      this.onGetOpenid();
+    } else {
+      this.setData({
+        msg: {
+          title: '',
+          content: '您还未登录，请先登录'
+        }
+      });
+      this.dialog.showDialog();
+    }
+  },
+
+  onGetOpenid: function () {
+    // 调用云函数
+    wx.cloud.callFunction({
+      name: 'addBuyList',
+      data: {
+        goodItem: this.data.goodItem,
+        buyNum: this.data.buyNum
+      },
+      success: res => {
+        this.setData({
+          msg: {
+            title: '',
+            content: '成功加入购物车'
+          }
+        });
+        this.dialog.showDialog();
+      },
+      fail: err => {
+        this.setData({
+          msg: {
+            title: '',
+            content: '加入购物车失败'
+          }
+        });
+        this.dialog.showDialog();
+      }
+    })
+  },
+
+  _cancelEvent() {
+    console.log('你点击了取消');
+    this.dialog.hideDialog();
+  },
+
+  //确认事件
+  _confirmEvent() {
+    console.log('你点击了确定');
+    this.dialog.hideDialog();
   }
 })
