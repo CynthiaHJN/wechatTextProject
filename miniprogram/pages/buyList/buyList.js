@@ -6,13 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    buyList: [
-      { id: 1, picUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/goods-image/goods-image-1.jpg?sign=e3f8790be8d9a8a557767bd1dec06a7c&t=1541578473', title: '时令新鲜水果脐橙5斤 超甜', price: '45.00', buyNum: 1, checked: false },
-      { id: 2, picUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/goods-image/goods-image-1.jpg?sign=e3f8790be8d9a8a557767bd1dec06a7c&t=1541578473', title: '时令新鲜水果脐橙5斤 超甜', price: '45.00', buyNum: 2, checked: false },
-      { id: 3, picUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/goods-image/goods-image-1.jpg?sign=e3f8790be8d9a8a557767bd1dec06a7c&t=1541578473', title: '时令新鲜水果脐橙5斤 超甜', price: '45.00', buyNum: 3, checked: false },
-      { id: 4, picUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/goods-image/goods-image-1.jpg?sign=e3f8790be8d9a8a557767bd1dec06a7c&t=1541578473', title: '时令新鲜水果脐橙5斤 超甜', price: '45.00', buyNum: 5, checked: false },
-      { id: 5, picUrl: 'https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/goods-image/goods-image-1.jpg?sign=e3f8790be8d9a8a557767bd1dec06a7c&t=1541578473', title: '时令新鲜水果脐橙5斤 超甜', price: '45.00', buyNum: 4, checked: false }
-    ],
+    buyList: [],
     totalAmount: 0,
     checkedAll: false
   },
@@ -121,5 +115,10 @@ Page({
         console.log(err);
       }
     })
+  },
+
+  goToPay: function () {
+    if (this.data.totalAmount>0) {
+    }
   }
 })

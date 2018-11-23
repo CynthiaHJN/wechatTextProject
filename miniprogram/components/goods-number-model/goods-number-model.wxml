@@ -21,6 +21,6 @@
         <icon class='next-icon'></icon>
       </view>
     </view>
-    <button class='confirmBtn'>确定</button>
+    <button class='confirmBtn' bindtap='confirm'>确定</button>
   </view>
 </view>

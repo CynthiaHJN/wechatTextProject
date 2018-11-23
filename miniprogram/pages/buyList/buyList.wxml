@@ -21,7 +21,7 @@
     <checkbox-group class="radio-all-group" bindchange="radioAll">
       <checkbox class='checkboxAll' value='1' checked='{{checkedAll}}'>全选</checkbox>
     </checkbox-group>
-    <button class='payBtn'>去结算</button>
+    <button class='payBtn {{totalAmount>0?"":"noAmount"}}' bindtap='goToPay'>去结算</button>
     <text class='totalAmount'>合计{{totalAmount}}元</text>
   </view>
 </view>

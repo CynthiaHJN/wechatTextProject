@@ -164,5 +164,12 @@ Page({
   _confirmEvent() {
     console.log('你点击了确定');
     this.dialog.hideDialog();
+  },
+
+  _confirmAdd(e) {
+    this.setData({
+      buyNum: e.detail.buyNum
+    })
+    this.myGoodsNumber.hideDialog();
   }
 })

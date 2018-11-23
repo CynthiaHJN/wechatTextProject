@@ -115,6 +115,9 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   border-radius: 0;
   line-height: 80rpx;
 }
+.noAmount {
+  background: rgb(250,172,102);
+}
 .payBtn::after{
   border: 0;
   padding: 0;

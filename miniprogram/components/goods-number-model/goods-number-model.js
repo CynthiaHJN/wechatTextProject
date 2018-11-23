@@ -71,6 +71,12 @@ Component({
       wx.navigateTo({
         url: '/pages/address/address',
       })
+    },
+    confirm() {
+      var myEventDetail = {
+        buyNum: this.data.buyNumber
+      }
+      this.triggerEvent("confirmEvent", myEventDetail);
     }
   }
 })

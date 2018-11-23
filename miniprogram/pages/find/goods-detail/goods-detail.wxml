@@ -27,6 +27,6 @@
     </view>
     <button bindtap='buyGoods' class='buyNow'>购买商品</button>
   </view>
-  <goods-number id="myGoodsNumber" buyNumber="{{buyNum}}"></goods-number>
+  <goods-number id="myGoodsNumber" buyNumber="{{buyNum}}" bind:confirmEvent="_confirmAdd"></goods-number>
   <dialog id="dialog" title="{{msg.title}}" content="{{msg.content}}" bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent"></dialog>
 </view>
