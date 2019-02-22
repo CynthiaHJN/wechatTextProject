@@ -5,7 +5,8 @@ Page({
    */
   data: {
     findList: [],
-    topBar: false
+    topBar: false,
+    inputValue: ''
   },
 
   /**
@@ -15,8 +16,32 @@ Page({
     this.getGoodsList();
   },
 
-  goToSearch: function () {
-    console.log('....');
+  setInputValue: function (e) {
+    this.setData({
+      inputValue: e.detail.value
+    })
+  },
+
+  goToSearch: function (e) {
+    console.log(this.data.inputValue);
+    if(this.data.inputValue){
+      wx.cloud.callFunction({
+        name: 'goodsList',
+        data: {
+          name: this.data.inputValue
+        },
+        success: res => {                                                                                                                                                         
+          this.setData({
+            findList: res.result.data
+          });
+        },
+        fail: err => {
+          console.log(err);
+        }
+      })
+    } else {
+      this.getGoodsList();
+    }
   },
 
   geToDetail: function(e) {

@@ -40,7 +40,7 @@
 .typeList .typeItem .typeNavigate  .typeButton {
   background-size: cover;
   background-color: white;
-  width: 160rpx;
+  width: 180rpx;
   font-size: 12px;
   height: 40rpx;
   line-height: 36rpx;

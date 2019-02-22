@@ -4,13 +4,11 @@ cloud.init()
 const db = cloud.database();
 // 云函数入口函数
 exports.main = async (event, context) => {
-  let { _id, parentId } = event
-  // if(_id) {
+  let { _id, parentId, name } = event
     return await db.collection('goods').where({
       "_id": _id,
-      "parentId": parentId
+      "parentId": parentId,
+      "name": name
     }).get()
-  // } else {
-    // return await db.collection('goods').get()
-  // }
+
 }

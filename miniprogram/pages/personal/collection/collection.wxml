@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='collectionItem'>
+    <view class='imgBox'><image class="img" src='https://6e69-nini-store-a15a86-1257989489.tcb.qcloud.la/goods-image/goods-image-1.jpg?sign=c8e39d30d71491666eaf62265c37e6f1&t=1550814780'></image></view>
+    <view class='textBox'>
+      <text class='name'>时令新鲜水果脐时令新鲜水果脐橙5斤 超甜</text>
+      <text class='collectNum'>收藏人数：122</text>
+      <text class='price'>￥45.00</text>
+    </view>
+  </view>
+</view>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

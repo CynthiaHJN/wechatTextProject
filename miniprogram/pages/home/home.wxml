@@ -4,7 +4,7 @@
     <view class="typeItem fruit" wx:for="{{typeMenus}}" wx:key="{{item._id}}" wx:for-item="item" style="background-image: url({{item.picUrl}}); background-size: 100% 100%;">
       <view class="typeNavigate">
         <text class="typeName">{{item.name}}</text>
-        <button class="typeButton">查看详情</button>
+        <button class="typeButton" bindtap='showDialog'>查看详情</button>
       </view>
     </view>
     <text class="bottomTip">敬请期待更多品类</text>

@@ -38,7 +38,7 @@
         <icon class='funcItemIcon'></icon>
         <text class='funcItemName'>账单</text>
       </view>
-      <view class='funcItem'>
+      <view class='funcItem' bindtap='goToCollection'>
         <icon class='funcItemIcon'></icon>
         <text class='funcItemName'>收藏</text>
       </view>

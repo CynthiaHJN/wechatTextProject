@@ -92,5 +92,11 @@ Page({
       })
       app.globalData.userInfo = e.detail.userInfo;
     }
+  },
+
+  goToCollection: function (e) {
+    wx.navigateTo({
+      url: './collection/collection',
+    })
   }
 })

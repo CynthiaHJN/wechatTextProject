@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/buyList/buyList",
+    "pages/personal/collection/collection",
+    "pages/personal/personal",
     "pages/home/home",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -11,8 +12,7 @@
     "pages/chooseLib/chooseLib",
     "pages/find/find",
     "pages/find/goods-detail/goods-detail",
-    
-    "pages/personal/personal",
+    "pages/buyList/buyList",
     "pages/address/address"
   ],
   "window": {

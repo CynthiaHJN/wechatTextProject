@@ -36,8 +36,8 @@ Page({
   },
 
   showDialog() {
-    this.connectDB();
-    // this.dialog.showDialog();
+    // this.connectDB();
+    this.dialog.showDialog();
   },
 
   //取消事件
